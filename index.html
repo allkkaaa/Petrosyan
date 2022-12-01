@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src='logo.png' alt="logo" class="logo">
+            <div class="wrapper">
+                <div class="offer">
+                    <h1 class="title">С помощью нас<br>вы сможете создать то, о чем <span class="title_span">желаете!</span></h1>
+                    <p class="offer_exp">Наши возможности + опыт позволят Вам достичь огромного успеха. Мы верим в Вас! И знаем, что это на все 100%. Вас не остановить!</p>
+                    <a href='#' class="more_btn animate" >Узнать больше</a> 
+                </div>
+                <img src="header-img.png" alt="phone" class="phone">
+            </div>
+        </div>
+    </header>
+
+    <section class="second">
+        <div class="container">
+            <h2 class="title_two">Что Вам необходимо?</h2>
+
+            <div class="wrapper_blocks">
+                <div class="block_item">
+                    <img src="f3.png" alt="pensil">
+                    <div class="item_head">Первый блок</div>
+                    <div class="item_descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+
+                <div class="block_item">
+                    <img src="f4.png" alt="baloon">
+                    <div class="item_head">Второй блок</div>
+                    <div class="item_descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+
+                <div class="block_item">
+                    <img src="f5.png" alt="flag">
+                    <div class="item_head">Третий блок</div>
+                    <div class="item_descr">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="order">
+        <div class="container">
+            <h2 class="title_three">Форма заказа услуги</h2>
+
+            <form action="#" method="post" enctype="multipart/form-data" class="form">
+                <div class="form_order">
+                    <div class="form_block">
+                        <div class="form_label">
+                            <label for="FirstName">Имя</label>
+                        </div>
+                        <div class="form_input"> 
+                            <input id="FirstName" class="form_item" type="text" name="name">
+                        </div>
+                    </div>
+
+                    <div class="form_block">
+                        <div class="form_label">
+                            <label for="LastName">Фамилия</label>
+                        </div>
+                        <div class="form_input">
+                            <input id="LastName" class="form_item" type="text">
+                        </div>
+                    </div>
+
+                    <div class="form_block">
+                        <div class="form_label">
+                            <label for="Tel">Номер телефона</label>
+                        </div>
+                        <div class="form_input">
+                            <input id="Tel" class="form_item" type="text"  placeholder="xxx-xxx-xxxx">
+                        </div>
+                    </div>
+
+                    <div class="form_block">
+                        <div class="form_label">
+                            <label for="Destination">Место назначения</label>
+                        </div>
+                        <div class="form_input">
+                            <input id="Destination" class="form_item" type="text">
+                        </div>
+                        
+                    </div>
+
+                    <div class="form_block">
+                        <div class="form_label">
+                            <label for="DateAndTime">Дата и время</label>
+                        </div>
+                        <div class="form_input">
+                            <input id="DateAndTime" class="form_item" type="text" placeholder="01.01.2000">  
+                        </div>
+                    </div>
+
+                    <div class="form_block">
+                        <div class="form_label">
+                             <label for="Quantity">Количество</label>
+                        </div>
+                        <div class="form_input">
+                            <input id="Quantity" class="form_item" type="text">
+                        </div>
+                    </div>
+
+                    <div class="form_block">
+                        <div class="form_label">
+                            <label for="PaymentMethod">Способ оплаты</label>
+                        </div>
+                        <div class="form_input">
+                            <select class="form-form_item" style="width: 280px; height: 30px;" aria-label="Default select example">
+                            <option value="Card">Card</option>
+                            <option value="Cash">Cash</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form_block">
+                        <input class="send_form" type="button" value="Send order" onclick="CheckValdation();">
+                    </div>
+                </div>
+                
+
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="third">
+        <div class="container">
+            <h2 class="title_three">Форма заказа обратного звонка</h2>
+
+            <form action="#" method="post" enctype="multipart/form-data" class="form">
+                <div>
+                    <input type="text" name="name" value="" placeholder="Имя" maxlength="20" required>
+                </div>
+        
+                <div>
+                    <input type="email" name="email" value="" placeholder="Введите свой email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,6}" required>
+                </div>
+
+                <div>
+                    <input type="tel" name="tel" value="" placeholder="Телефон xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </div>
+
+                <div>
+                    <input class="theme" type="text" name="theme" value="" placeholder="Какая тема Вас интересует?"  minlength="2" maxlength="40">
+                </div>
+
+                <button class="send" type="submit">Отправить вопрос</button>
+
+            </form>
+        </div>
+    </section>
+<footer class="footer">
+        <div class="container">
+            <p class="footer_descr">Все на этом сайте защищено</p>
+        </div>
+</footer>
+
+
+</body>
+
+</html>
